@@ -1,16 +1,134 @@
-# React + Vite
+Project Manager Web App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Project Management Web Application built with React that allows users to:
 
-Currently, two official plugins are available:
+Create multiple Projects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add and manage Tasks inside each project
 
-## React Compiler
+Track task progress using status columns:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📝 To Do
 
-## Expanding the ESLint configuration
+🚧 In Progress
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Finished
+
+The app implements full CRUD functionality and uses Local Storage for persistent data.
+
+🚀 Features
+📁 Project Management
+
+Create new projects
+
+Open project
+
+Edit project details
+
+Delete projects
+
+✅ Task Management (Inside Each Project)
+
+Add tasks to a specific project
+
+Edit/update tasks
+
+Delete tasks
+
+Change task status:
+
+To Do
+
+In Progress
+
+Finished
+
+Automatically group tasks by status
+
+⚙️ Technical Features
+
+Full CRUD operations
+
+Persistent storage using Local Storage
+
+Built with React Hooks (useState, useEffect)
+
+Reusable and modular component structure
+
+Responsive UI layout
+
+🛠️ Tech Stack
+
+Frontend: React
+
+State Management: React Hooks
+
+Storage: Browser Local Storage
+
+Styling: CSS (Responsive Design)
+
+🏗️ Application Structure
+project-manager/
+│
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ProjectList.js
+│   │   ├── ProjectForm.js
+│   │   ├── TaskList.js
+│   │   ├── TaskForm.js
+│   │   ├── TaskCard.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   └── styles.css
+│
+├── package.json
+└── README.md
+🔄 How It Works
+
+User creates a Project
+
+Each project contains multiple Tasks
+
+Each task has:
+
+Title
+
+Description
+
+Status (To Do / In Progress / Finished)
+
+Tasks are displayed in columns based on their status
+
+All data is saved in Local Storage
+
+Data persists after page refresh
+
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/project-manager.git
+2️⃣ Navigate into the project directory
+cd project-manager
+3️⃣ Install dependencies
+npm install
+4️⃣ Start the development server
+npm start
+
+App runs at:
+
+http://localhost:3000
+
+📈 Future Improvements
+
+Drag-and-drop task movement
+
+Due dates and priority levels
+
+Search and filter tasks
+
+Backend integration (Node.js / Firebase)
+
+User authentication
+
+Dashboard analytics
