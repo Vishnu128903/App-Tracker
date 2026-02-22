@@ -107,7 +107,7 @@ Data persists after page refresh
 
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
-git clone https://github.com/Vishnu128903/project-manager.git
+git clone https://github.com/Vishnu128903/App-Tracker
 2️⃣ Navigate into the project directory
 cd project-manager
 3️⃣ Install dependencies
