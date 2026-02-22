@@ -107,7 +107,7 @@ Data persists after page refresh
 
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
-git clone https://github.com/your-username/project-manager.git
+git clone https://github.com/Vishnu128903/project-manager.git
 2️⃣ Navigate into the project directory
 cd project-manager
 3️⃣ Install dependencies
@@ -117,7 +117,7 @@ npm start
 
 App runs at:
 
-http://localhost:3000
+http://localhost:userlocalhost
 
 📈 Future Improvements
 
