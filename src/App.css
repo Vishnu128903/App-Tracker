@@ -1,0 +1,169 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Headings ===== */
+h1 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+h2, h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* ===== Inputs ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  background: #667eea;
+  color: white;
+}
+
+button:hover {
+  background: #5563d6;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===== Task Form ===== */
+.task-form {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9ff;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+/* ===== Board Layout ===== */
+.board {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.column {
+  flex: 1;
+  background: #f4f6fb;
+  padding: 15px;
+  border-radius: 12px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Column Titles */
+.column h3 {
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+}
+
+/* Different colors per column */
+.column:nth-child(1) h3 {
+  background: #ff9800;
+}
+
+.column:nth-child(2) h3 {
+  background: #2196f3;
+}
+
+.column:nth-child(3) h3 {
+  background: #4caf50;
+}
+
+/* ===== Task Cards ===== */
+.task {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.task:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.task h4 {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.task p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Task Buttons */
+.task button {
+  margin-top: 6px;
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+/* ===== Create Project Screen ===== */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .board {
+    flex-direction: column;
+  }
+}
